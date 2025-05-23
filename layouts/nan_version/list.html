@@ -1,0 +1,16 @@
+
+{{ define "main" }}
+
+<div class="intro">
+  {{ .Content }}
+</div>
+
+<ul>
+{{ range sort .Sections "Title" "desc" }}
+  <li>
+    <a href="{{ .RelPermalink }}"> {{ with .Params.linkTitle }}{{ . }}{{ else }}{{ .Title }}{{ end }}</a>
+  </li>
+{{ end }}
+</ul>
+
+{{ end }}

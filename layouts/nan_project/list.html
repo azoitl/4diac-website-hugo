@@ -1,0 +1,55 @@
+
+{{ define "main" }}
+
+<style>
+  .permalink {
+    font-size: 0.6em;
+    line-height: 1;
+    margin-left: 0.25em;
+    vertical-align: middle;
+  }
+</style>
+
+<div class="intro">
+  {{ .Content }}
+</div>
+
+
+{{/* Prepare map in .Scratch */}}
+{{ $.Scratch.Set "grouped" (dict) }}
+{{ $grouped := $.Scratch.Get "grouped" }}
+
+{{/* Collect items into section groups */}}
+{{ range .Pages }}
+  {{ $section := .Params.section | default "Other" }}
+  {{ $pages := index $grouped $section | default (slice) }}
+  {{ $pages = $pages | append . }}
+  {{ $grouped = merge $grouped (dict $section $pages) }}
+  {{ $.Scratch.Set "grouped" $grouped }}
+{{ end }}
+
+{{/* Re-fetch final grouped map */}}
+{{ $grouped := $.Scratch.Get "grouped" }}
+
+{{/* Section TOC */}}
+{{ $grouped := $.Scratch.Get "grouped" }}
+<nav>
+  <ul>
+    {{ range $section, $_ := $grouped }}
+      <li><a href="#{{ anchorize $section }}">{{ $section }}</a></li>
+    {{ end }}
+  </ul>
+</nav>
+
+
+{{/* Render grouped items */}}
+{{ range $section, $items := $grouped }}
+  <h2 id="{{ anchorize $section }}">{{ $section }}</h2>
+    {{ range $items }}
+      {{ $itemAnchor := .File.TranslationBaseName }}
+      <h3 id="{{ $itemAnchor }}">{{ .Title }} <a class="permalink" href="#{{ $itemAnchor }}">🔗</a></h3>
+      {{ .Content }}
+    {{ end }}
+{{ end }}
+
+{{ end }}
