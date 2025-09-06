@@ -40,9 +40,30 @@ items:
           After many years working in research in the area of Industrie 4.0, he moved to the industry to work in the areas of robotics and later in the development of medical devices. 
           He is currently pursuing his PhD in the area of debugging of automation systems at the Johannes Kepler University, Linz, Austria. 
           His research interests are in the areas of distributed systems, model driven engineering and software development as well as debugging methods for industrial systems.</p>
+  - name: "Martin Jobst"
+    bio: |
+      <p> Lorem ipsum.</p>
+  - name: "Martin Melik Merkumians"
+    link: "https://github.com/MartinMelikMerkumians"
+    linkedin_handle: "martin-melik-merkumians-66a79b25"
+    img: "martin_melik_merkumians.jpg"
+    bio: |
+      <p>Martin Melik Merkumians is Head of Research and Development at the electrify smart energy GmbH. He obtained his diploma in automation technology from TU Wien in 2009, and is currently finalizing his PhD thesis at TU Wien. He is a founding member and regular committer on the various Eclipse 4diac projects, focusing on runtime behavior, language editors, and compatibility to relevant IEC 61131 topics and standards.
+         Before joining electrify smart energy GmbH he was the head of the research group for industrial automation at TU Wien's Automation and Control Institue, where he lead several public and industry-funded R&D projects in the fields of industrial automation and robotics.</p>
+  - name: "Michael Oberlehner"
+    img: "oberlehner_michael.jpg"
+    link: "https://www.jku.at/en/lit-cyber-physical-systems-lab/about-us/our-team/di-michael-oberlehner/"
+    linkedin_handle: "michael-oberlehner-098814224"
+    bio: |
+      <p>Michael is a member of the Eclipse 4diac project team and an active developer of 4diac IDE. 
+         He holds a Master’s degree in Computer Science and is currently in the final phase of his PhD. 
+         His research focuses on library management and refactoring in IEC 61499, which has been integrated into 4diac IDE.</p>
+      <p>Prior to his PhD, Michael gained experience in industry, which gave him valuable insight into the real-world challenges in an industrial environment.</p>
   - name: "Monika Wenger"
     link: https://github.com/moniwe
     linkedin_handle: "monika-wenger-1786b3304"
     img: "moniwe.png"
     bio: |
-      <p>Monika Wenger is part of the Eclipse 4diac team since its start. After many years in research on Industry 4.0, she moved into industry and now works in the field of digital twins. She worked on many parts of Eclipse 4diac, including IDE and function block library developement, recently she fokuses more on bringing 4diac FORTE to different PLCs and implementing IO subsystems on them.</p>
+      <p>Monika Wenger is part of the Eclipse 4diac team since its start. 
+         After many years in research on Industry 4.0, she moved into industry and now works in the field of digital twins. 
+         She worked on many parts of Eclipse 4diac, including IDE and function block library developement, recently she fokuses more on bringing 4diac FORTE to different PLCs and implementing IO subsystems on them.</p>
