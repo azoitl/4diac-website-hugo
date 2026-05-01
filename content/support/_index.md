@@ -10,8 +10,9 @@ page_css_file: /4diac/css/support.css
 hide_breadcrumb: true
 sidebar:
   - sb-sup-before
-  - sb-sup-discussion
   - sb-sup-new
+  - sb-sup-discussion
+  - sb-sup-com
 ---
 
 ### Not sure where to ask your question?
@@ -78,8 +79,14 @@ See:
 
 ## Commercial Support
 
-There are also several entities offering commercial support for Eclipse 4diac.
-Please find their contact details below.
+While the Eclipse 4diac community provides excellent help on a best-effort basis, industrial projects often require guaranteed response times or specialized engineering. 
+Several organizations and individuals offer professional services to help you successfully deploy IEC 61499 solutions.
+
+**This may include:** 
+* **Industrial Integration:** Support for production-critical systems and hardware porting. 
+* **Custom Development:** Implementation of specialized features or IDE extensions. 
+* **Architecture Reviews:** Expert audits of application design and system complexity. 
+* **Training & Consulting:** Specialized workshops for engineering teams.
 
 {{< commercial_support source="commercialSupport" imgRoot="../img/team/">}}
 
