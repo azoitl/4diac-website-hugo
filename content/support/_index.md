@@ -88,7 +88,7 @@ Several organizations and individuals offer professional services to help you su
 * **Architecture Reviews:** Expert audits of application design and system complexity. 
 * **Training & Consulting:** Specialized workshops for engineering teams.
 
-{{< commercial_support source="commercialSupport" imgRoot="../img/team/">}}
+{{< commercial_support source="commercialSupport">}}
 
 We are looking forward to helping you with your Eclipse 4diac project.
 
